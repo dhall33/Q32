@@ -1,0 +1,59 @@
+import java.util.Scanner; 
+
+
+   
+
+public class memo { 
+      Scanner objScanner = new Scanner(System.in); 
+          private int intMonth = ""; //author
+          private int intYear = "";
+          
+          public memo() { 
+              this.month("8"); 
+              this.year("1999"); 
+              }
+          public memo(int pintMonth) { 
+              this.month(pintMonth); 
+              this.year("1999"); 
+              }
+          public memo(String pstrAuthor, String pstrTitle) { 
+              this.month(pintMonth);         
+              this.year(pintYear); 
+              }
+           public void input() { 
+              System.out.println("Please enter any year and a month (1-12)..."); 
+              this.inputMonth();         
+              this.inputYear(); 
+              }
+           public String author() { 
+              return this.intMonth;
+              }
+           public void author(String pstrAuthor){   
+              this.intMonth = pintMonth;   
+               }
+           public void inputAuthor() {  
+             System.out.print("Enter a month using numbers 1 through 12: ");   
+             this.month(objScanner.nextLine());   
+              }
+          public String title() {  
+            return this.intYear;  
+            }
+          public void title(String pintYear) {   
+            this.intYear = pintYear;  
+            }
+          public void inputTitle() {      
+            System.out.print("Enter a year: ");  
+            this.year(objScanner.nextLine());   
+            }
+          public String toString() {  
+            return this.month() + " - " + this.year();   
+          } 
+          
+    }
+          
+          
+          
+          
+          
+          
+          
